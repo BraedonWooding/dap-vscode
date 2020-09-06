@@ -1,0 +1,37 @@
+{
+    "name": "dap-lang",
+    "displayName": "Dap Language",
+    "description": "Syntax highlighting support for the dap programming language",
+    "version": "0.0.1",
+    "publisher": "braedonww",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BraedonWooding/dap-vscode"
+    },
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "dap",
+                "aliases": ["dap", "dap"],
+                "extensions": [
+                    ".dap"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dap",
+                "scopeName": "source.dap",
+                "path": "./syntaxes/dap.tmLanguage.json"
+            }
+        ]
+    }
+}
